@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap");
+
+:root {
+  --dark-grey: #374151;
+  --off-white: #f3f4f6;
+
+  --green: #16c79a;
+
+  --hoverselect: #008891;
+
+  --red: #f05454;
+
+  --fontblue: #30475e;
+
+  --darkbl: #222831;
+
+  --bgcol: #dddddd;
+}
+
+body {
+  box-sizing: border-box;
+background-color: var(--bgcol);
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+article {
+  background-color: cornflowerblue;
+
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.flex-container {
+  /* padding: 1rem; */
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.flex-container input {
+  padding: 0;
+
+  margin: 0;
+}
+
+.flex-container label {
+  padding: 0;
+  margin: 0;
+}
+
+.button-primary {
+  border-radius: 0.5rem;
+
+  height: 2rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var( --hoverselect);
+border-style: solid;
+border-color: var( --hoverselect) ;
+color:var(--bgcol) ;
+}
+
+
+.button-secondary {
+    border-radius: 0.5rem;
+  
+    height: 2rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: var(--bgcol);
+  border-style: solid;
+  border-color: var( --hoverselect) ;
+  color:var( --hoverselect) ;
+  }
+  
+
+  /* .flex-container-question{
+
+
+
+
+  } */
+
+
+  .radio-btn{
+
+border-radius: 0;
+height: 1rem;
+
+
+  }
+
+  input[type=radio]:checked ~ .check {
+    border: 5px solid #0DFF92;
+  }
+  
+  input[type=radio]:checked ~ .check::before{
+    background: #0DFF92;
+  }
+  
+  input[type=radio]:checked ~ label{
+    color: #0DFF92;
+  }
