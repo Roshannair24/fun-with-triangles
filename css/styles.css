@@ -19,7 +19,7 @@
 
 body {
   box-sizing: border-box;
-background-color: var(--bgcol);
+  background-color: var(--bgcol);
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
@@ -56,49 +56,106 @@ article {
 
   height: 2rem;
   font-family: "Be Vietnam Pro", sans-serif;
-  background-color: var( --hoverselect);
-border-style: solid;
-border-color: var( --hoverselect) ;
-color:var(--bgcol) ;
+  background-color: var(--hoverselect);
+  border-style: solid;
+  border-color: var(--hoverselect);
+  color: var(--bgcol);
+}
+
+.button-secondary {
+  border-radius: 0.5rem;
+
+  height: 2rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--bgcol);
+  border-style: solid;
+  border-color: var(--hoverselect);
+  color: var(--hoverselect);
+}
+
+.flex-container-question{
+
+
+padding: 0.5rem;
+
+
+
 }
 
 
-.button-secondary {
-    border-radius: 0.5rem;
-  
-    height: 2rem;
-    font-family: "Be Vietnam Pro", sans-serif;
-    background-color: var(--bgcol);
-  border-style: solid;
-  border-color: var( --hoverselect) ;
-  color:var( --hoverselect) ;
-  }
-  
+.flex-container-question ul {
+  list-style-type: none;
 
-  /* .flex-container-question{
+  width: 100%;
+
+  background-color: darkred;
 
 
+  display: flex;
 
 
-  } */
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
 
 
-  .radio-btn{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
 
-border-radius: 0;
-height: 1rem;
+.flex-container-question li {
+  display: inline;
+
+background-color: darkorange;
+
+  list-style-type: none;
+
+width:24%;
+margin: 0.5rem;
+
+ 
+}
+
+.options-container{
 
 
-  }
+display: flex;
+flex-direction: row;
 
-  input[type=radio]:checked ~ .check {
-    border: 5px solid #0DFF92;
-  }
-  
-  input[type=radio]:checked ~ .check::before{
-    background: #0DFF92;
-  }
-  
-  input[type=radio]:checked ~ label{
-    color: #0DFF92;
-  }
+
+
+
+}
+
+
+
+
+
+
+.radio-btn {
+  border-radius: 0;
+  height: 1rem;
+}
+
+
+
+
+/* input[type="radio"]:checked ~ .check {
+  border: 5px solid #0dff92;
+} */
+
+/* input[type="radio"]:checked ~ .check::before {
+  background: blue;
+}
+ */
+
+
+
+
+/* input[type="radio"]:checked ~ label {
+  color: #0dff92;
+} */
