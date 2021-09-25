@@ -23,7 +23,77 @@ body {
   box-sizing: border-box;
   background-color: var(--bgcol);
   font-family: "Be Vietnam Pro", sans-serif;
+
+  margin: 0;
+
+ color: var(--fontblue);
+
+
+
 }
+
+.nav-container {
+  background-color: var(--darkbl);
+  padding: 0.5rem;
+}
+
+.nav-container .brandname {
+  padding: 0.25rem;
+}
+
+.nav-container .nav-list ul {
+  padding: 0.25rem 0 0.25rem 0;
+  list-style-type: none;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.nav-container .nav-list ul li {
+  padding-left: 0.5rem;
+
+  padding-right: 0.5rem;
+}
+
+.border-left {
+  border-left: 2px solid var(--fontblue);
+}
+
+.nav-container .nav-list ul li a {
+  text-decoration: none;
+
+  color: var(--off-white);
+}
+
+.nav-container .nav-list ul li a:hover {
+  text-decoration: none;
+
+  color: var(--highlightgreen);
+}
+
+
+.heading-holder{
+
+  text-align: center;
+
+
+
+}
+
+
+
 
 article {
   background-color: cornflowerblue;
@@ -31,10 +101,19 @@ article {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.flex-container {
-
-
+.input-holder {
+  padding: 1rem;
   display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+
+  width: 50%;
 
   justify-content: center;
   align-items: center;
@@ -42,26 +121,69 @@ article {
   flex-direction: column;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
 .flex-container input {
   padding: 0;
 
   margin: 0;
+  border-radius: 0.5rem;
+
+  height: 1.5rem;
+
+  border-style: solid;
+
+  outline: none;
+
+  text-align: center;
+
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .flex-container label {
   padding: 0;
   margin: 0;
+  font-weight: bold;
 }
+
+
+.button-holder{
+
+
+
+text-align: center;
+
+}
+
+
 
 .button-primary {
   border-radius: 0.5rem;
-
+font-weight: bold;
   height: 2rem;
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: var(--hoverselect);
   border-style: solid;
   border-color: var(--hoverselect);
   color: var(--bgcol);
+  margin: 1rem;
+  transition: all 0.5s ease;
+}
+
+.button-primary:hover {
+
+  background-color: var(--highlightgreen);
+ 
+  border-color: var(--highlightgreen);
+  color: var(--darkbl);
+  transition: all 0.5s ease;
 }
 
 .button-secondary {
@@ -77,9 +199,8 @@ article {
 
 .flex-container-question {
   padding: 0.5rem;
-  border-radius: 1rem;
-  border-style: solid;
-  
+  /* border-radius: 1rem;
+  border-style: solid; */
 }
 
 .flex-container-question ul {
@@ -121,6 +242,14 @@ article {
   display: flex;
   flex-direction: row;
 }
+
+.options-container li input{
+
+display: none;
+
+
+}
+
 
 .radio-btn {
   border-radius: 0;

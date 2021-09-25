@@ -31,10 +31,10 @@ function isTriangle() {
   if (sumOfAngles === 180) {
     console.log("The angles form a triangle");
 
-    outputheadingisTriangle.innerText = "The angles form a triangle";
+    outputheadingisTriangle.innerText = "Yes,The angles form a triangle.";
   } else {
     console.log("The angles dont form a triangle");
 
-    outputheadingisTriangle.innerText = "The angles dont form a triangle";
+    outputheadingisTriangle.innerText = "The angles dont form a triangle.";
   }
 }
