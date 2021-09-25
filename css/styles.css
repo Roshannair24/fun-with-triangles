@@ -26,10 +26,7 @@ body {
 
   margin: 0;
 
- color: var(--fontblue);
-
-
-
+  color: var(--fontblue);
 }
 
 .nav-container {
@@ -83,17 +80,9 @@ body {
   color: var(--highlightgreen);
 }
 
-
-.heading-holder{
-
+.heading-holder {
   text-align: center;
-
-
-
 }
-
-
-
 
 article {
   background-color: cornflowerblue;
@@ -128,8 +117,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
-
 .flex-container input {
   padding: 0;
 
@@ -153,20 +140,13 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
 }
 
-
-.button-holder{
-
-
-
-text-align: center;
-
+.button-holder {
+  text-align: center;
 }
-
-
 
 .button-primary {
   border-radius: 0.5rem;
-font-weight: bold;
+  font-weight: bold;
   height: 2rem;
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: var(--hoverselect);
@@ -178,9 +158,8 @@ font-weight: bold;
 }
 
 .button-primary:hover {
-
   background-color: var(--highlightgreen);
- 
+
   border-color: var(--highlightgreen);
   color: var(--darkbl);
   transition: all 0.5s ease;
@@ -235,7 +214,7 @@ font-weight: bold;
 }
 
 .flex-container-question li:hover {
-  color: var(--highlightgreen);
+  color: var(--hoverselect);
 }
 
 .options-container {
@@ -243,19 +222,26 @@ font-weight: bold;
   flex-direction: row;
 }
 
-.options-container li input{
-
-display: none;
-
-
+.options-container li input {
+  display: none;
 }
 
+.options-container li label {
+  display: block;
+ 
+  border-radius: 0.3rem;
+}
 
+input[type="radio"]:checked + label {
+  background-color: var(--fontblue);
+}
+
+/* 
 .radio-btn {
   border-radius: 0;
   height: 1rem;
-}
+} */
 
 input[type="radio"]:checked ~ label {
-  color: #0dff92;
+  color: var(--bgcol);
 }

@@ -2,7 +2,7 @@ let quizForm = document.querySelector("#quiz-form");
 let quizbuttonprimary = document.querySelector(".button-primary");
 let outputheading = document.querySelector(".output-heading");
 
-let correctAnswers = ["90°", "right angled"];
+let correctAnswers = ["90°", "right angled", "one right angle"];
 
 quizbuttonprimary.addEventListener("click", calculateScore);
 
@@ -32,6 +32,5 @@ function calculateScore() {
 
   console.log("score:" + score);
 
-
-  outputheading .innerText="Your score: " + score;
+  outputheading.innerText = "Your score: " + score;
 }
