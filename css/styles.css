@@ -132,6 +132,8 @@ input::-webkit-inner-spin-button {
   text-align: center;
 
   font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: bold;
+  color: var(--dark-grey);
 }
 
 .flex-container label {

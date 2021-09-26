@@ -5,28 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Calculate hypotenuse</h1>
+    <nav class="nav-container">
+      <div class="brandname">
+        <strong>Fun with Triangles</strong>
+      </div>
 
-    <label for="sa">Side A:</label>
+      <div class="nav-list">
+        <ul>
+          <li>
+            <a href="isTriangle.html"> is Triangle?</a>
+          </li>
 
-    <br />
+          <li class="border-left">
+            <a href="Triangle Quiz.html">Quiz</a>
+          </li>
 
-    <input id="sa" type="number" class="sides" />
-    <br />
+          <li class="border-left">
+            <a href="hypotenuse.html">Hypotenuse</a>
+          </li>
 
-    <label for="sb">Side B:</label>
+          <li class="border-left">
+            <a href="AreaOfTriangle.html">Area of triangle</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <br />
-    <input id="sb" type="number" class="sides" />
+    <div class="heading-holder">
+      <h1>Calculate hypotenuse</h1>
+    </div>
 
-    <br />
-    <button class="Calculate-Hypotenuse-btn">Calculate Hypotenuse</button>
+    <div class="input-holder">
+      <div class="flex-container">
+        <label for="sa">Side A:</label>
 
-    <h2 class="output-heading"></h2>
+        <br />
 
+        <input id="sa" type="number" class="sides" />
+      </div>
+<br>
+      <div class="flex-container">
+        <label for="sb">Side B:</label>
 
+        <br />
+        <input id="sb" type="number" class="sides" />
+      </div>
+    </div>
+
+    <div class="button-holder">
+      <button class="Calculate-Hypotenuse-btn button-primary">
+        Calculate Hypotenuse
+      </button>
+
+      <h2 class="output-heading"></h2>
+    </div>
 
     <script src="hypotenuse.js"></script>
   </body>

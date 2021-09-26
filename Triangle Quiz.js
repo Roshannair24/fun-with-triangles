@@ -2,7 +2,7 @@ let quizForm = document.querySelector("#quiz-form");
 let quizbuttonprimary = document.querySelector(".button-primary");
 let outputheading = document.querySelector(".output-heading");
 
-let correctAnswers = ["90°", "right angled", "one right angle","45, 45, 90"];
+let correctAnswers = ["90°", "right angled", "one right angle","85°","Equilateral triangle"];
 
 quizbuttonprimary.addEventListener("click", calculateScore);
 

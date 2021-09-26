@@ -5,29 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <nav class="nav-container">
+      <div class="brandname">
+        <strong>Fun with Triangles</strong>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li>
+            <a href="isTriangle.html"> is Triangle?</a>
+          </li>
+
+          <li class="border-left">
+            <a href="Triangle Quiz.html">Quiz</a>
+          </li>
+
+          <li class="border-left">
+            <a href="hypotenuse.html">Hypotenuse</a>
+          </li>
+
+          <li class="border-left">
+            <a href="AreaOfTriangle.html">Area of triangle</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="heading-holder">
+      <h1>Area of Triangle</h1>
+    </div>
+
+
+
+<div class="input-holder">
+
+  <div  class="flex-container">
+
     <label for="base">Base</label>
-
+    <br />
     <input class="sides" id="base" type="number" />
-
+  
     <br />
+  
+  
+  </div  >
+  <div class="flex-container">
 
-    <label for="height">height</label>
-
+    <label for="height">Height</label>
+    <br />
+  
     <input class="sides" id="height" type="number" />
-
+  
     <br />
-   
-   
-   
-   
-    <button class="calculate-area-btn">Calculate Area of Triangle</button>
+  
+  
+  </div>
+
+</div>
+
+
+<div     class="button-holder">
+
+
+  <button class="calculate-area-btn button-primary">Calculate Area of Triangle</button>
+
+  <h2 class="output"></h2>
 
 
 
-    <h2 class="output"></h2>
+</div>
+
+
+
+
+
     <script src="AreaOfTriangle.js"></script>
-
   </body>
 </html>
