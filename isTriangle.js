@@ -20,21 +20,35 @@ function calculateSumOfAngles(angleA, angleB, angleC) {
 buttonisTriangle.addEventListener("click", isTriangle);
 
 function isTriangle() {
-  sumOfAngles = calculateSumOfAngles(
-    inputs[0].value,
-    inputs[1].value,
-    inputs[2].value
-  );
+  if (inputs[0].value < 0 || inputs[1].value < 0 || inputs[2].value < 0) {
+    console.log("negative values");
 
-  console.log("sumOfAngles: " + sumOfAngles);
+    outputheadingisTriangle.innerText = "Please input valid numerals.";
+  } else if (
+    inputs[0].value == 0 ||
+    inputs[1].value == 0 ||
+    inputs[2].value == 0
+  ) {
+    console.log("zero values");
 
-  if (sumOfAngles === 180) {
-    console.log("The angles form a triangle");
-
-    outputheadingisTriangle.innerText = "Yes,The angles form a triangle.";
+    outputheadingisTriangle.innerText = "Please input valid numerals.";
   } else {
-    console.log("The angles dont form a triangle");
+    sumOfAngles = calculateSumOfAngles(
+      inputs[0].value,
+      inputs[1].value,
+      inputs[2].value
+    );
 
-    outputheadingisTriangle.innerText = "The angles dont form a triangle.";
+    console.log("sumOfAngles: " + sumOfAngles);
+
+    if (sumOfAngles === 180) {
+      console.log("The angles form a triangle");
+
+      outputheadingisTriangle.innerText = "Yes,The angles form a triangle.";
+    } else {
+      console.log("The angles dont form a triangle");
+
+      outputheadingisTriangle.innerText = "The angles dont form a triangle.";
+    }
   }
 }
