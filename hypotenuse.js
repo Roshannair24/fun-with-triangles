@@ -27,14 +27,24 @@ function calculateHypotenuse() {
   console.log(sides[1].value);
   console.log(typeof sides[1].value);
 
-  let mastersquredsum = sumsquaredofsides(
-    Number(sides[0].value),
-    Number(sides[1].value)
-  );
+  if (sides[0].value < 0 || sides[1].value < 0) {
+    console.log("negative values");
 
-  let mastersum = Math.sqrt(mastersquredsum);
-  mastersum=  mastersum.toFixed(2);
-  console.log(mastersum);
+    outputheading.innerText = "Please input valid numerals";
+  } else if (sides[0].value == 0 || sides[1].value == 0) {
+    console.log("zero values");
 
-  outputheading.innerText = "Hypotenuse length is: " + mastersum + " units";
+    outputheading.innerText = "Please input valid numerals";
+  } else {
+    let mastersquredsum = sumsquaredofsides(
+      Number(sides[0].value),
+      Number(sides[1].value)
+    );
+
+    let mastersum = Math.sqrt(mastersquredsum);
+    mastersum = mastersum.toFixed(2);
+    console.log(mastersum);
+
+    outputheading.innerText = "Hypotenuse length is: " + mastersum + " units";
+  }
 }
