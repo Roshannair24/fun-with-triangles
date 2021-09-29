@@ -33,7 +33,7 @@ function calculateHypotenuse() {
   );
 
   let mastersum = Math.sqrt(mastersquredsum);
-
+  mastersum=  mastersum.toFixed(2);
   console.log(mastersum);
 
   outputheading.innerText = "Hypotenuse length is: " + mastersum + " units";
