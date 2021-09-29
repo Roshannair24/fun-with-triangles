@@ -23,13 +23,22 @@ function calcproduct(a, b) {
 function calculateAreaofTriangle() {
   console.log("clicked");
 
-  let masterprod = calcproduct(Number(sides[0].value), Number(sides[1].value));
+  if (Number(sides[0].value) < 0 || Number(sides[1].value) < 0) {
+    console.log("Please input valid numerals");
 
-  let areaofTriangle = masterprod / 2;
+    output.innerText = "Please input valid numerals";
+  } else {
+    let masterprod = calcproduct(
+      Number(sides[0].value),
+      Number(sides[1].value)
+    );
 
-  areaofTriangle = areaofTriangle.toFixed(2);
+    let areaofTriangle = masterprod / 2;
 
-  console.log("areaofTriangle=" + areaofTriangle);
+    areaofTriangle = areaofTriangle.toFixed(2);
 
-  output.innerText = "Area of Triangle: " + areaofTriangle + "units";
+    console.log("areaofTriangle=" + areaofTriangle);
+
+    output.innerText = "Area of Triangle: " + areaofTriangle + "units";
+  }
 }
