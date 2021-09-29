@@ -25,10 +25,11 @@ function calculateAreaofTriangle() {
 
   let masterprod = calcproduct(Number(sides[0].value), Number(sides[1].value));
 
+  let areaofTriangle = masterprod / 2;
 
+  areaofTriangle = areaofTriangle.toFixed(2);
 
-  let areaofTriangle= masterprod/2;
-  console.log("areaofTriangle="+areaofTriangle);
+  console.log("areaofTriangle=" + areaofTriangle);
 
-  output.innerText="Area of Triangle: "+areaofTriangle+ "units";
+  output.innerText = "Area of Triangle: " + areaofTriangle + "units";
 }
